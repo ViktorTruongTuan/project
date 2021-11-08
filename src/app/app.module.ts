@@ -6,13 +6,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CaroselComponent } from './carosel/carosel.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ProductlistComponent } from './productlist/productlist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CaroselComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProductlistComponent
   ],
   imports: [
     BrowserModule,
