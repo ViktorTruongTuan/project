@@ -6,7 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { CarouselComponent } from './carousel/carousel.component';
-
+import {} from "@ng-bootstrap/ng-bootstrap"
 @NgModule({
   declarations: [
     AppComponent,
