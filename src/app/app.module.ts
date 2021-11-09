@@ -9,13 +9,15 @@ import { CarouselComponent } from './carousel/carousel.component';
 import {} from "@ng-bootstrap/ng-bootstrap"
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { ModalloginComponent } from './modallogin/modallogin.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NavbarComponent,
     ProductlistComponent,
-    CarouselComponent
+    CarouselComponent,
+    ModalloginComponent,
   ],
   imports: [
     BrowserModule,

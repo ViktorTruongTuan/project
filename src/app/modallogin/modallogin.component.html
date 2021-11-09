@@ -1,0 +1,27 @@
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Login</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <!-- Tabs Titles -->
+                <!-- Login Form -->
+                <form>
+                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="email">
+                    <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Login</button>
+        <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Forgot Password?</button>
+        <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Sign up</button>
+    </div>
+</ng-template>
+
+<span (click)="open(content)">Login</span>

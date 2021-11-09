@@ -1,25 +1,23 @@
-<div class="sidenav">
-  <div class="login-main-text">
-     <h2>Hana Petshop</h2>
-     <p>Welcome to our shop!</p>
-  </div>
+<div class="row">
+    <div class="col">
+        <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownForm1" ngbDropdownToggle>LOGIN</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownForm1">
+                <form class="px-4 py-3">
+                    <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" autocomplete="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" autocomplete="current-password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <button ngbDropdownItem>New around here? Sign up</button>
+                <button ngbDropdownItem>Forgot password?</button>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="main">
-  <div class="col-md-6 col-sm-12">
-     <div class="login-form">
-        <form>
-           <div class="form-group">
-              <label>User Name</label>
-              <input type="text" class="form-control" placeholder="User Name">
-           </div>
-           <div class="form-group">
-              <label>Password</label>
-              <input type="password" class="form-control" placeholder="Password">
-           </div>
-           <button type="submit" class="btn btn-black">Login</button>
-           <button type="submit" class="btn btn-secondary">Register</button>
-        </form>
-     </div>
-  </div>
-</div>
-
