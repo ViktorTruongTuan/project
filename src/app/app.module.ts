@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import {} from "@ng-bootstrap/ng-bootstrap"
+import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import {} from "@ng-bootstrap/ng-bootstrap"
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    AppRoutingModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
