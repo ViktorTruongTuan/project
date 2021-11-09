@@ -1,15 +1,8 @@
 <nav class="navbar navbar-expand-sm bg-light navbar-light">
     <!-- Logo -->
     <a href="#" class="navbar-brand">
-        <img src="assets/Logo.png" alt="Logo" id="logo"> Hana
+        <img src="assets/Logo.png" alt="Logo" id="logo" /> Hana
     </a>
-    <form class="form-inline" action="">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search...">
-        <!-- <span>
-      <button class="btn btn-success" type="submit">Search</button>
-    </span> -->
-    </form>
-
     <!-- Elements -->
     <ul class="navbar-nav">
         <li class="nav-item">
@@ -20,8 +13,54 @@
             <a href="#" class="nav-link">Services</a>
         </li>
 
-        <li class="nav-item">
-            <a href="#" class="nav-link">About Us</a>
+        <li class="nav-item" ngbDropdown>
+            <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown2" role="button">
+        User
+      </a>
+            <div ngbDropdownMenu aria-labelledby="navbarDropdown2" class="dropdown-menu dropdown-menu-right">
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">CartList</a
+        >
+        <a ngbDropdownItem href="#" (click)="$event.preventDefault()"
+          >Change UserInfo</a
+        >
+        <a ngbDropdownItem href="#" (click)="$event.preventDefault()"
+          >Check Bill ID</a
+        >
+        <a ngbDropdownItem href="#" (click)="$event.preventDefault()"
+          >Spa Schedule</a
+        >
+      </div>
+    </li>
+
+    <li class="nav-item" ngbDropdown>
+      <a
+        class="nav-link"
+        tabindex="0"
+        ngbDropdownToggle
+        id="navbarDropdown2"
+        role="button"
+      >
+        Admin
+      </a>
+                <div ngbDropdownMenu aria-labelledby="navbarDropdown2" class="dropdown-menu dropdown-menu-right">
+                    <a ngbDropdownItem href="#" (click)="$event.preventDefault()">UsersList</a
+        >
+        <a ngbDropdownItem href="#" (click)="$event.preventDefault()"
+          >Storage</a
+        >
+        <a ngbDropdownItem href="#" (click)="$event.preventDefault()"
+          >Customer Schedule</a
+        >
+        <a ngbDropdownItem href="#" (click)="$event.preventDefault()"
+          >Staff Information</a
+        >
+        <a ngbDropdownItem href="#" (click)="$event.preventDefault()"
+          >Check Purchase Orders</a
+        >
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">About Us</a>
         </li>
         <!-- Login and Signup -->
         <li class="nav-item">
@@ -30,6 +69,4 @@
             </a>
         </li>
     </ul>
-
-
 </nav>
